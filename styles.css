@@ -4,17 +4,35 @@
     margin: 0 auto;
     height: 650px;
     background-color: blue;
-}
-.container div {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+.container div {
+    width: 200px;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 input {
+    width: 100%;
     margin-top: 20%;
-    position: relative;
+    transition: all 3s;
 }
 img {
     position: absolute;
-    left: 55%;
-    top: 42.5%;
+    right: 1px;
+    bottom: 1px;
+    transition: all 3s;
+    width: 10%;
+    height: 33%;
+    background-color: white;
+}
+.active {
+    width: 15%;
+}
+.active-img {
+    right: 45%;
 }
